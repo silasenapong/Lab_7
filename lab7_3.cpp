@@ -4,6 +4,20 @@ using namespace std;
 char before(char x)
 {
 	// Write your function definition here
+
+	if (x == 'A')
+	{
+		return 'Z';
+	}
+	else if (int(x) >= 65 && int(x) <= 90)
+	{
+		return char(x - 1);
+	}
+
+	else
+	{
+		return '0';
+	}
 }
 
 int main()
